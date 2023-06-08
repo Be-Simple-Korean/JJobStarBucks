@@ -1,4 +1,4 @@
-package com.example.jjobstarbucks.fragment
+package com.example.jjobstarbucks.ui.fragment
 
 import android.os.Binder
 import android.os.Bundle

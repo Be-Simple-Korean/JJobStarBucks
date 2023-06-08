@@ -2,4 +2,7 @@
     <string name="app_name">JJobStarBucks</string>
     <string name="order">Order</string>
     <string name="home">Home</string>
+    <string name="home_title">%s님\n커피 사주세요</string>
+    <string name="coupon_count">%d/%d</string>
+
 </resources>

@@ -1,9 +1,10 @@
-package com.example.jjobstarbucks
+package com.example.jjobstarbucks.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.jjobstarbucks.R
 import com.example.jjobstarbucks.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -18,4 +19,5 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
         binding.bnv.setupWithNavController(navController)
     }
+
 }
