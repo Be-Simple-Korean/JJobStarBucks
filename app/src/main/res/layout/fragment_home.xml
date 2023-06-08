@@ -7,6 +7,7 @@
     tools:context=".ui.fragment.HomeFragment">
 
     <ScrollView
+        android:id="@+id/sv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:nestedScrollingEnabled="true"
@@ -75,12 +76,12 @@
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="0dp"
                     android:layout_height="8dp"
-                    android:progressDrawable="@drawable/drawable_progress"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="50dp"
                     android:max="12"
                     android:progress="5"
+                    android:progressDrawable="@drawable/drawable_progress"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/tv_count"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -137,4 +138,16 @@
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/efab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:backgroundTint="#2e6830"
+        android:text="DELIVERY"
+        android:textColor="@color/white"
+        app:icon="@drawable/baseline_delivery_dining_24"
+        app:iconTint="@color/white" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

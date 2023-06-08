@@ -42,6 +42,14 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initCoffee(homeData, menuData)
         initBanner(homeData)
         initFood(menuData)
+
+        binding.sv.setOnScrollChangeListener { v, _, scrollY, _, oldScrollY ->
+            if (scrollY == 0) { // 최상단
+                binding.efab.extend() // 확장
+            } else {
+                binding.efab.shrink() // 수축
+            }
+        }
     }
 
     private fun initFood(menuData: Menu) {
