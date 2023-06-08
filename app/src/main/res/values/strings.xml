@@ -4,5 +4,6 @@
     <string name="home">Home</string>
     <string name="home_title">%s님\n커피 사주세요</string>
     <string name="coupon_count">%d/%d</string>
-
+    <string name="menu_title">%s님을 위한 추천 메뉴</string>
+    <string name="food_title">함께하면 좋은 음식</string>
 </resources>

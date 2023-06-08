@@ -10,15 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:nestedScrollingEnabled="true"
+        android:scrollbars="none"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <include
-                layout="@layout/layout_home_contents"
-                android:id="@+id/lhc"/>
+                android:id="@+id/lhc_coffee"
+                layout="@layout/layout_home_contents" />
+
+            <include
+                android:id="@+id/lbi"
+                layout="@layout/layout_banner_image" />
+
+            <include
+                android:id="@+id/lhc_food"
+                layout="@layout/layout_home_contents" />
         </LinearLayout>
     </ScrollView>
 
@@ -40,8 +50,8 @@
                     android:id="@+id/iv_app_bar"
                     android:layout_width="0dp"
                     android:layout_height="170dp"
-                    android:background="@color/teal_200"
                     android:alpha="0.5"
+                    android:background="@color/teal_200"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +74,8 @@
                     android:id="@+id/pb"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="8dp"
+                    android:progressDrawable="@drawable/drawable_progress"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="50dp"

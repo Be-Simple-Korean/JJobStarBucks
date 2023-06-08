@@ -1,0 +1,49 @@
+{
+  "coffee": [
+    {
+      "name": "아메리카노",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "카페라떼",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "원조커피",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "마끼아또",
+      "image": "https://picsum.photos/100/100"
+    },{
+      "name": "달고나커피",
+      "image": "https://picsum.photos/100/100"
+    }
+    ,{
+      "name": "콜드브루",
+      "image": "https://picsum.photos/100/100"
+    },
+    {
+      "name": "얼그레이 티",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "유자차",
+      "image": "https://picsum.photos/200/100"
+    }
+  ],
+  "food": [
+    {
+      "name": "마카롱",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "조각 케이크",
+      "image": "https://picsum.photos/200/100"
+    },
+    {
+      "name": "샌드위치",
+      "image": "https://picsum.photos/200/100"
+    }
+  ]
+}
