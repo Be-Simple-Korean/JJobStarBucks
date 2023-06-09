@@ -42,7 +42,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initCoffee(homeData, menuData)
         initBanner(homeData)
         initFood(menuData)
+        initFloatingActionButton()
+    }
 
+    private fun initFloatingActionButton() {
         binding.sv.setOnScrollChangeListener { v, _, scrollY, _, oldScrollY ->
             if (scrollY == 0) { // 최상단
                 binding.efab.extend() // 확장
