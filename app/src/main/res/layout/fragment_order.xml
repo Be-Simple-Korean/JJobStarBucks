@@ -8,6 +8,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
+        android:background="#F3F3F3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
@@ -25,6 +26,14 @@
             android:minHeight="?attr/actionBarSize"
             app:layoutDescription="@xml/fragment_order_scene"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_search_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <View
                 android:id="@+id/v_toolbar"
@@ -49,15 +58,4 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/efab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="20dp"
-        android:backgroundTint="#2e6830"
-        android:text="DELIVERY"
-        android:textColor="@color/white"
-        app:icon="@drawable/baseline_delivery_dining_24"
-        app:iconTint="@color/white" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
